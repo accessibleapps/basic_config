@@ -7,8 +7,7 @@ setup(
  name = "basic_config",
  version = __version__,
  description = __doc__,
- package_dir = {'basic_config': '.'},
- packages = ['basic_config',],
+ py_modules = ['config',],
  classifiers = [
   'Development Status :: 3 - Alpha',
   'Intended Audience :: Developers',
