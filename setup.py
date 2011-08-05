@@ -8,6 +8,9 @@ setup(
  version = __version__,
  description = __doc__,
  packages = ['basic_config',],
+ install_requires = [
+  'configobj',
+ ],
  classifiers = [
   'Development Status :: 3 - Alpha',
   'Intended Audience :: Developers',
