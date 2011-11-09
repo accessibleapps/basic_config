@@ -7,8 +7,10 @@ setup(
  name = "basic_config",
  version = __version__,
  description = __doc__,
- package_dir = {'basic_config': '.'},
  packages = ['basic_config',],
+ install_requires = [
+  'configobj',
+ ],
  classifiers = [
   'Development Status :: 3 - Alpha',
   'Intended Audience :: Developers',
