@@ -1,13 +1,13 @@
-from setuptools import setup, find_packages
+from distutils.core import setup
 
-__version__ = 0.12
+__version__ = "0.3"
 __doc__ = """Standard configuration setup for Q-Continuum packages"""
 
 setup(
  name = "basic_config",
  version = __version__,
  description = __doc__,
- packages = ['basic_config',],
+ py_modules = ["basic_config"],
  install_requires = [
   'configobj',
  ],
