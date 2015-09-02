@@ -16,3 +16,4 @@ def load_configuration(config_path, configspec_path=None, *args, **kwargs):
  if validated == True:
   config.write()
   return config
+ raise ConfigLoadError

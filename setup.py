@@ -1,4 +1,4 @@
-from distutils.core import setup
+from setuptools import setup
 
 __version__ = "0.3"
 __doc__ = """Standard configuration setup for Q-Continuum packages"""
