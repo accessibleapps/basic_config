@@ -1,3 +1,4 @@
+from typing import Any, Optional
 
 from configobj import ConfigObj, ParseError
 from validate import Validator
@@ -7,7 +8,13 @@ class ConfigLoadError(Exception):
     pass
 
 
-def load_configuration(config_path, configspec_path=None, copy=True, *args, **kwargs):
+def load_configuration(
+    config_path: str,
+    configspec_path: Optional[str] = None,
+    copy: bool = True,
+    *args: Any,
+    **kwargs: Any,
+) -> ConfigObj:
     spec = ConfigObj(configspec_path, encoding="UTF8", list_values=False, _inspec=True)
     try:
         config = ConfigObj(*args, infile=config_path, configspec=spec, create_empty=True, encoding="UTF8", **kwargs)
